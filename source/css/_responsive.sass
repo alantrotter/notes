@@ -1,0 +1,81 @@
+@media (max-width: 1040px)
+
+	html
+		font-size: 55%
+
+	.container
+		padding: 0 2rem
+		
+	.sidebar
+		display: none
+		
+	h1
+		font-size: 7.5rem
+		margin-bottom: 2rem
+		
+	p.subtitle
+		font-size: 3.2rem
+	p.subtitle, hgroup
+		margin-bottom: 4rem
+		
+	.byline
+		display: none
+
+			
+	
+	.mobilebyline 
+		display: block
+		p
+			font-family: $sans-family
+			font-size: 1.4rem
+			border-top: 0.1em solid $highlight
+			border-bottom: 0.1em solid $highlight
+			.mobilebylinename
+				text-transform: uppercase
+				letter-spacing: 0.08em
+				margin-right: 0.5em
+				a
+					background-image: linear-gradient( to bottom, rgba(0,0,0,0) 50%, $highlight-transparent 50%, $highlight-transparent 100%)
+					&::after
+						content: none
+			.mobilebylinetime
+				font-weight: 200
+			.mobilebylinename, .mobilebylinetime
+				white-space: nowrap
+			
+			
+			
+				
+@media (max-width: 1040px) and (min-width: 680px)
+
+		
+	.container
+		margin-left: 17rem
+	
+	article
+		max-width: 60rem
+
+				
+@media (max-width: 679px)
+	
+		
+	p img
+		max-height: 32.5rem
+		
+	article aside, article small.aside
+		border-top: 0.1em solid $highlight
+		border-bottom: 0.1em solid $highlight
+		padding: 2rem 0
+		margin: 3rem auto
+		display: block
+		position: relative
+		left: 0
+		width: 100%
+		max-width: 34rem
+		text-align: left
+		p:last-child, img:last-child
+			margin-bottom: 0
+		img
+			width: auto
+			max-width: 17rem 
+			float: none

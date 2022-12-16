@@ -1,0 +1,47 @@
+doctype html
+
+html
+	
+	include _metadata.pug
+
+	head
+		//- include _analytics.pug
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+				
+
+		include ../_includes/_stylesheets.pug
+		include ../_includes/_favicons.pug
+		include ../_includes/_scripts.pug
+			
+		
+		title
+			+title
+		
+		include _opengraph.pug
+		
+				
+	body
+		.container
+			article
+	
+				.mobilebyline(aria-hidden="true")
+					
+				hgroup
+					include _header.pug
+				
+				.byline
+					address
+						+author
+					+pubdate
+					
+				.sidebar(aria-hidden="true")
+					.runningshoulder
+						
+				include _article.pug
+		
+			
+	
+		include ../_includes/_footer.pug
+		
+		.progressbar

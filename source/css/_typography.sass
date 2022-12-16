@@ -1,0 +1,153 @@
+body 
+	font-family: kings-caslon,sans-serif
+	line-height: 1.4
+	font-size: 2.2rem
+
+hgroup
+	margin-bottom: 6rem
+
+h1
+	margin-bottom: 0.5em
+	font-family: $sans-family
+	font-weight: 900
+	font-style: normal
+	color: $highlight
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	font-size: 7rem
+	line-height: 0.8
+	
+p.subtitle
+	margin-bottom: 1em
+	font-family: kings-caslon-display, serif
+	font-weight: 400
+	font-style: italic
+	font-size: 2.4rem
+	line-height: 1.2
+	em
+		font-style: normal
+	
+h2
+	font-family: $sans-family
+	font-weight: 900
+	margin: 3.8rem 0 2.4rem
+	font-size: 2.4rem
+	color: $highlight
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	
+	
+.runningshoulder
+	font-size: 1.6rem
+	color: rgba(black, 0.6)
+	font-style: italic
+	p
+		opacity: 0
+	p.on
+		opacity: 1
+	
+address
+	font-family: $sans-family
+	font-style: normal
+	font-size: 1.4rem
+	font-weight: 400
+	color: black
+	line-height: 0.8
+	a
+		background-image: linear-gradient( to bottom, rgba(0,0,0,0) 85%, $highlight-transparent 85%, $highlight-transparent 100%)
+		background-size: 100% 200%
+		transition: background-position 0.25s cubic-bezier(.12,.83,.63,.95)
+		&:hover, &:focus
+			background-position: 0 100%
+			transition: background-position 0.5s cubic-bezier(.07,.73,.15,.98)
+
+time
+	font-size: 1.2rem
+	font-style: italic
+	line-height: 0.8
+
+p
+	margin-bottom: 2rem
+	a
+		position: relative
+		background-image: linear-gradient( to bottom, rgba(0,0,0,0) 80%, $highlight-transparent 80%, $highlight-transparent 100%)
+		background-size: 100% 200%
+		transition: background-position 0.25s cubic-bezier(.12,.83,.63,.95)
+		&:hover, &:focus
+			background-position: 0 100%
+			transition: background-position 0.5s cubic-bezier(.07,.73,.15,.98)
+		&::after
+			position: relative
+			content: '+'
+			font-family: $sans-family
+			font-weight: 900
+			color: $highlight
+			font-size: 0.5em
+			top: -1em
+			padding: 0.1em
+
+span.uppercase
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	font-weight: 700
+	font-size: 0.85em
+	
+hr
+	margin: 3rem 1rem 3.8rem
+	border: 0
+	&::before
+		margin-inline: auto
+		content: ''
+		display: block
+		width: 0.6rem
+		height: 0.6rem
+		border-radius: 50%
+		border: rgba(0, 0, 0, 0.4) 0.1em solid
+
+article
+	img
+		margin: 1rem 0 3.6rem 0
+	figure
+		margin-bottom: 2.6rem
+		img
+			margin: 1rem 0 
+		figcaption
+			font-family: $sans-family
+			font-weight: 200
+			font-size: 1.2rem
+			max-width: 80ch
+		
+aside, small.aside
+	font-family: $sans-family
+	font-weight: 200
+	font-size: 1.2rem
+	text-align: right
+	a
+		background-position: 0 12%
+		&::after
+			content: none
+		&:hover, &:focus
+			background-position: 0 73%
+	
+blockquote
+	font-size: 2rem
+	margin: 3rem 0 3rem 8rem
+	padding-left: 4rem
+	border-left: 0.1em solid $highlight-transparent
+
+	
+aside p a, small.aside p a, #basic-navigation p a
+	background-position: 0 73%
+	&:hover, &:focus
+		background-position: 0 100%
+	&::after
+		content: none
+
+		
+#basic-navigation 
+	p
+		font-size: 1.6rem
+		text-align: center
+		margin: 1rem 0
+		font-style: italic
+		
